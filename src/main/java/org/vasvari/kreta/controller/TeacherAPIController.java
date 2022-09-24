@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 public class TeacherAPIController {
-
+//kommentelni mindent
     @Autowired
     TeacherServices service;
 
