@@ -14,21 +14,21 @@
       <tr>
         <th>Azon.</th>
         <th>Tantárgy</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Szerkesztés</th>
+        <th>Törlés</th>
       </tr>
       </thead>
       <tbody>
       <tr th:each="subject: ${subjects}">
         <td th:text="${subject.id}"></td>
         <td th:text="${subject.subjectName}"></td>
-        <td> <a th:href="@{/subject/edit/{id}(id=${subject.id})}">Edit</a></td>
-        <td> <a th:href="@{/subject/delete/{id}(id=${subject.id})}">Delete</a></td>
+        <td> <a th:href="@{/subject/edit/{id}(id=${subject.id})}">Szerkesztés</a></td>
+        <td> <a th:href="@{/subject/delete/{id}(id=${subject.id})}">Törlés</a></td>
       </tr>
       </tbody>
     </table>
   </div>
-  <p> <a href="/signup">Add new subject</a> </p>
+  <p> <a href="/signup">Új tantárgy</a> </p>
 </div>
 </body>
 </html>
